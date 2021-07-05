@@ -195,8 +195,8 @@ bar {
 
 exec --no-startup-id xcompmgr -r 0 -o 0 &
 exec --no-startup-id xlayoutdisplay --dpi 100
-exec_always --no-startup-id nitrogen --restore
-exec_always --no-startup-id flameshot
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id flameshot
 
 for_window [class=".*"] border pixel 2
 gaps inner 10
