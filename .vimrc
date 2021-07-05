@@ -31,6 +31,8 @@ set tabstop=4 shiftwidth=4 expandtab
 set relativenumber nu
 set t_ut=
 
+let g:coc_global_extensions = ['coc-json', 'coc-prettier', 'coc-rust-analyzer', 'coc-tsserver']
+
 let g:vim_json_conceal = 0
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
