@@ -3,6 +3,6 @@ command=date "+%A %d/%b %R"
 interval=10
 
 [battery]
-command=~/.config/i3blocks/battery.mjs
+command=acpi
 interval=5
 

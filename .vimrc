@@ -18,6 +18,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'joshdick/onedark.vim'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'cespare/vim-toml'
+Plugin 'airblade/vim-gitgutter'
 
 
 call vundle#end()            " required
