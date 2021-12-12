@@ -1,37 +1,42 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin(stdpath('data') . '/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" AUTOCOMPLETE :
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plugin 'rust-lang/rust.vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-Plugin 'yggdroot/indentline'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'tpope/vim-fugitive'
-Plugin 'joshdick/onedark.vim'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'cespare/vim-toml'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'nvim-lua/popup.nvim'
-Plugin 'nvim-lua/plenary.nvim'
-Plugin 'nvim-telescope/telescope.nvim'
-Plugin 'habamax/vim-godot'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'OmniSharp/omnisharp-vim'
-Plugin 'dense-analysis/ale'
+Plug 'cespare/vim-toml'                                " Add toml syntax highlithing
+Plug 'yggdroot/indentline'                             " Add a line for indentation size
+Plug 'ervandew/supertab'                               " For autocompletion ?
+Plug 'scrooloose/nerdtree'                             " File tree
+Plug 'Xuyuanp/nerdtree-git-plugin'                     " Adds file modifications in nerdTree
+Plug 'tpope/vim-fugitive'                              " Best GIT plugin for vim ?
+Plug 'airblade/vim-gitgutter'                          " Show git diffs in files
+Plug 'sheerun/vim-polyglot'                            " ? I Think it adds syntax highlighting for a lot of languages
+Plug 'vim-airline/vim-airline'                         " Line on the bottom for showing various informations
+Plug 'evanleck/vim-svelte', {'branch': 'main'}         " Syntax highlighting for svelte
+Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
+Plug 'Chiel92/vim-autoformat'                          " AutoFormat
 
-call vundle#end()
+Plug 'OmniSharp/omnisharp-vim'                         " Omnisharp
+Plug 'dense-analysis/ale'                            " For omnisharp
+
+" Colorschemes
+Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'tomasr/molokai'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'jacoborus/tender.vim'
+
+call plug#end()
+
 filetype plugin indent on
 syntax enable
 
-colorscheme onedark
+" colorscheme molokai
+" colorscheme challenger_deep
+colorscheme tender
 
 " Set tab width to 4
 set tabstop=4 shiftwidth=4 expandtab
@@ -43,30 +48,30 @@ set cmdheight=2
 " Set folding on
 set foldmethod=syntax
 " Set clipboard to sysyem clipboard
-set clipboard=unnamedplus
-
-let g:opamshare = substitute(system('opam var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-au FileType ocaml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-
-let g:coc_global_extensions = ['coc-json', 'coc-prettier', 'coc-rust-analyzer', 'coc-tsserver', 'coc-omnisharp']
+set clipboard+=unnamedplus
 
 let g:vim_json_conceal = 0
 let g:SuperTabDefaultCompletionType = "<c-n>"
-
+" Make NERDTree show hidden file
+let NERDTreeShowHidden=1
+" Set Coc Extensions
+let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright']
+" Set ALE linters for only CSharp
 let g:ale_linters = {
 \ 'cs': ['OmniSharp']
 \}
 
-" Make NERDTree show hidden file
-let NERDTreeShowHidden=1
+" Config for neovide:
+let g:neovide_cursor_vfx_mode = "railgun"
+
+set guifont=FiraCode\ Nerd\ Font\ Mono:style=Medium,Regular:h12
 
 let mapleader = ","
 
 " jk to escape insert mode 
 inoremap jk <esc>
 
-" Coc shortcuts
+" Lanuage servers shortcuts
 nmap <leader>rn <Plug>(coc-rename)
 nmap <silent> gd <Plug>(coc-definition)
 
