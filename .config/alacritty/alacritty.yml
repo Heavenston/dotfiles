@@ -1,3 +1,6 @@
+import:
+  - ~/.config/alacritty/themes/tomorrow_night.yaml
+
 font:
   normal:
     family: Fira Code
