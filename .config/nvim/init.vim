@@ -13,7 +13,7 @@ Plug 'scrooloose/nerdtree'                             " File tree
 Plug 'Xuyuanp/nerdtree-git-plugin'                     " Adds file modifications in nerdTree
 Plug 'tpope/vim-fugitive'                              " Best GIT plugin for vim ?
 Plug 'airblade/vim-gitgutter'                          " Show git diffs in files
-Plug 'sheerun/vim-polyglot'                            " ? I Think it adds syntax highlighting for a lot of languages
+" Plug 'sheerun/vim-polyglot'                            " ? I Think it adds syntax highlighting for a lot of languages
 Plug 'vim-airline/vim-airline'                         " Line on the bottom for showing various informations
 Plug 'evanleck/vim-svelte', {'branch': 'main'}         " Syntax highlighting for svelte
 Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
