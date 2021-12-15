@@ -1,6 +1,11 @@
 import:
   - ~/.config/alacritty/themes/tomorrow_night.yaml
 
+window:
+  padding:
+    x: 4
+    y: 4
+
 font:
   normal:
     family: Fira Code
