@@ -4,6 +4,11 @@
             "host": "127.0.0.1",
             "filetypes": ["gdscript"],
             "port": 6008
+        },
+        "ocaml-lsp": {
+           "command": "opam",
+           "args": ["config", "exec", "--", "ocamllsp"],
+           "filetypes": ["ocaml", "reason"]
         }
     }
 }
