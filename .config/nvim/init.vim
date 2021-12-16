@@ -47,7 +47,7 @@ set updatetime=300
 set cmdheight=2
 " Set folding on
 set foldmethod=syntax
-" Set clipboard to sysyem clipboard
+" Set clipboard to system clipboard
 set clipboard+=unnamedplus
 
 let g:vim_json_conceal = 0
@@ -63,7 +63,6 @@ let g:ale_linters = {
 
 " Config for neovide:
 let g:neovide_cursor_vfx_mode = "railgun"
-
 set guifont=FiraCode\ Nerd\ Font\ Mono:style=Medium,Regular:h12
 
 let mapleader = ","
@@ -84,12 +83,6 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
-
-" Telescope related
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Split changing without C-W Direction, directly C-Direction
 nnoremap <C-J> <C-W><C-J>
