@@ -88,6 +88,16 @@ modifier = ["modkey", "Shift"]
 key = "j"
 
 [[keybind]]
+command = "FocusPreviousTag"
+modifier = ["modkey"]
+key = "comma"
+
+[[keybind]]
+command = "FocusNextTag"
+modifier = ["modkey"]
+key = "semicolon"
+
+[[keybind]]
 command = "GotoTag"
 value = "1"
 modifier = ["modkey"]
