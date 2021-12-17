@@ -1,0 +1,37 @@
+{% for tag in workspace.tags %}
+
+%{A1:$GARDENPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
+
+{% capture variant %}{% cycle 0, 1 %}{% endcapture %}
+
+{% assign text  = '   ' %}
+
+{% assign color = '#102932' %}
+{% if variant == '0' %}
+{% assign color = '#0F262F' %}
+{% endif %}
+
+{% if tag.mine %}
+{% assign color = '#72B8D1' %}
+{% assign text  = ' ' | append: tag.name | append: ' ' %}
+
+{% elsif tag.focused and variant == '0' %}
+{% assign color = '#2D728B' %}
+{% elsif tag.focused  %}
+{% assign color = '#2D728B' %}
+
+{% elsif tag.busy and variant == '0' %}
+{% assign color = '#2D728B' %}
+{% elsif tag.busy %}
+{% assign color = '#2A6A81' %}
+
+{% endif %}
+
+%{T0}
+%{F#FCFCFC}
+%{B{{color}}}
+{%comment%}  [{{tag.name}}]  {%endcomment%}
+{{text}}
+%{F-}%{B-}
+%{A}%{A}
+{% endfor %}
