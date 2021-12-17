@@ -20,7 +20,7 @@ Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
 Plug 'Chiel92/vim-autoformat'                          " AutoFormat
 
 Plug 'OmniSharp/omnisharp-vim'                         " Omnisharp
-Plug 'dense-analysis/ale'                            " For omnisharp
+Plug 'dense-analysis/ale'                              " For omnisharp
 
 " Colorschemes
 Plug 'joshdick/onedark.vim'
