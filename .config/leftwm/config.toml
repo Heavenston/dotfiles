@@ -57,6 +57,18 @@ command = "FocusWindowDown"
 modifier = ["modkey"]
 key = "j"
 
+# RESIZING WINDOWS
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "3"
+modifier = ["modkey"]
+key = "Right"
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "3"
+modifier = ["modkey"]
+key = "Left"
+
 [[keybind]]
 command = "NextLayout"
 modifier = ["modkey", "Control"]
