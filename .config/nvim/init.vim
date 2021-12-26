@@ -19,9 +19,6 @@ Plug 'evanleck/vim-svelte', {'branch': 'main'}         " Syntax highlighting for
 Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
 Plug 'Chiel92/vim-autoformat'                          " AutoFormat
 
-Plug 'OmniSharp/omnisharp-vim'                         " Omnisharp
-Plug 'dense-analysis/ale'                              " For omnisharp
-
 " Colorschemes
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
@@ -55,11 +52,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " Make NERDTree show hidden file
 let NERDTreeShowHidden=1
 " Set Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright']
-" Set ALE linters for only CSharp
-let g:ale_linters = {
-\ 'cs': ['OmniSharp']
-\}
+let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp']
 
 " Config for neovide:
 let g:neovide_cursor_vfx_mode = "railgun"
