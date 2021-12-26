@@ -27,6 +27,11 @@ modifier = ["modkey", "Shift"]
 key = "q"
 
 [[keybind]]
+command = "ToggleFullScreen"
+modifier = ["modkey"]
+key = "f"
+
+[[keybind]]
 command = "SoftReload"
 modifier = ["modkey", "Shift"]
 key = "r"
