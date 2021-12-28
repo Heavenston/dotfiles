@@ -1,21 +1,16 @@
 # ~/.zshrc
+source ~/.zplug/init.zsh
 
-# If not running interactively, don't do anything
-# Probably useless since zsh only loads this file if in interactive mode
-[[ $- != *i* ]] && return
+# ZSH Better vim mode
+zplug "jeffreytse/zsh-vi-mode"
+
+zplug load
 
 alias vim="nvim"
 alias ls="exa -lF --icons --sort type"
 alias lsa="ls -a"
 
 eval "$(starship init zsh)"
-
-# Enable auto completion
-autoload -Uz compinit
-compinit
-
-# Vim keybindings !
-bindkey -v
 
 export HISTFILE=~/.histfile
 export HISTSIZE=5000
