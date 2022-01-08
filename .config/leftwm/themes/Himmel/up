@@ -18,6 +18,7 @@ echo "LoadTheme $SCRIPTPATH/theme.toml" > "$XDG_RUNTIME_DIR/leftwm/commands.pipe
 feh --no-fehbg --bg-fill "$SCRIPTPATH/Backgrounds/0143.jpg"
 # Start networkManager applet
 nm-applet &
+blueman-applet &
 
 # Start polybar
 pkill polybar
