@@ -16,6 +16,7 @@ export HISTFILE=~/.histfile
 export HISTSIZE=5000
 export SAVEHIST=10000
 setopt appendhistory
+setopt histignoredups
 
 export PATH=$PATH:"$HOME/.cargo/bin"
 export EDITOR="vim"
