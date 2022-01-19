@@ -18,6 +18,7 @@ Plug 'vim-airline/vim-airline'                         " Line on the bottom for 
 Plug 'evanleck/vim-svelte', {'branch': 'main'}         " Syntax highlighting for svelte
 Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
 Plug 'Chiel92/vim-autoformat'                          " AutoFormat
+Plug 'lervag/vimtex'                                   " LaTeX Support
 
 " Colorschemes
 Plug 'joshdick/onedark.vim'
@@ -53,6 +54,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let NERDTreeShowHidden=1
 " Set Coc Extensions
 let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp']
+
+" Disable vimtex concealing
+"let g:vimtex_syntax_conceal_disable = 1
 
 " Config for neovide:
 let g:neovide_cursor_vfx_mode = "railgun"
