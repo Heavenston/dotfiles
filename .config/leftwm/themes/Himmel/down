@@ -7,4 +7,5 @@ pkill compton
 pkill picom
 pkill polybar
 pkill blueman-applet
+pkill nm-applet
 #pkill dunst
