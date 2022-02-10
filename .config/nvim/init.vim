@@ -18,6 +18,7 @@ Plug 'vim-airline/vim-airline'                         " Line on the bottom for 
 Plug 'evanleck/vim-svelte', {'branch': 'main'}         " Syntax highlighting for svelte
 Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
 Plug 'Chiel92/vim-autoformat'                          " AutoFormat
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'lervag/vimtex'                                   " LaTeX Support
 
 " Colorschemes
@@ -55,8 +56,12 @@ let NERDTreeShowHidden=1
 " Set Coc Extensions
 let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp']
 
+let g:prettier#autoformat = 0
+let g:prettier#autoformat_require_pragma = 0
+let g:prettier#autoformat_config_present = 0
+
 " Disable vimtex concealing
-"let g:vimtex_syntax_conceal_disable = 1
+let g:vimtex_syntax_conceal_disable = 1
 
 " Config for neovide:
 let g:neovide_cursor_vfx_mode = "railgun"
@@ -94,3 +99,5 @@ tnoremap <Esc> <C-\><C-n>
 nmap <leader>ne :NERDTree<cr>
 " ,nt to toggle NERDTree
 nmap <leader>nt :NERDTreeToggle<cr>
+" ,p to run Prettier (in async mode)
+nmap <Leader>p <Plug>(PrettierAsync)
