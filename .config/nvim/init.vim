@@ -20,6 +20,7 @@ Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
 Plug 'Chiel92/vim-autoformat'                          " AutoFormat
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'lervag/vimtex'                                   " LaTeX Support
+Plug 'ziglang/zig.vim'
 
 " BUFFERLINE
 Plug 'kyazdani42/nvim-web-devicons'
@@ -60,7 +61,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " Make NERDTree show hidden file
 let NERDTreeShowHidden=1
 " Set Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp', 'coc-cmake']
+let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp', 'coc-cmake', 'coc-zig']
 
 let g:prettier#autoformat = 0
 let g:prettier#autoformat_require_pragma = 0
