@@ -21,6 +21,10 @@ Plug 'Chiel92/vim-autoformat'                          " AutoFormat
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'lervag/vimtex'                                   " LaTeX Support
 
+" BUFFERLINE
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim'
+
 " Colorschemes
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
@@ -48,13 +52,15 @@ set cmdheight=2
 set foldmethod=syntax
 " Set clipboard to system clipboard
 set clipboard+=unnamedplus
+" For bufferline
+set termguicolors
 
 let g:vim_json_conceal = 0
 let g:SuperTabDefaultCompletionType = "<c-n>"
 " Make NERDTree show hidden file
 let NERDTreeShowHidden=1
 " Set Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp']
+let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp', 'coc-cmake']
 
 let g:prettier#autoformat = 0
 let g:prettier#autoformat_require_pragma = 0
@@ -68,6 +74,23 @@ let g:neovide_cursor_vfx_mode = "railgun"
 set guifont=FiraCode\ Nerd\ Font\ Mono:style=Medium,Regular:h12
 
 let mapleader = ","
+
+"" Bufferline config
+
+lua << EOF
+require("bufferline").setup {
+    options = {
+        show_close_icon = false,
+        diagnostics = "coc",
+    }
+}
+EOF
+" Next buffer
+nnoremap <silent> gl :BufferLineCycleNext<CR>
+" Previous buffer
+nnoremap <silent> gh :BufferLineCyclePrev<CR>
+nnoremap <silent> gp :BufferLinePick<CR>
+nnoremap <silent> gb :BufferLinePickClose<CR>
 
 " jk to escape insert mode 
 inoremap jk <esc>
