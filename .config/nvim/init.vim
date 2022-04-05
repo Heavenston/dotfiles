@@ -13,14 +13,13 @@ Plug 'scrooloose/nerdtree'                             " File tree
 Plug 'Xuyuanp/nerdtree-git-plugin'                     " Adds file modifications in nerdTree
 Plug 'tpope/vim-fugitive'                              " Best GIT plugin for vim ?
 Plug 'airblade/vim-gitgutter'                          " Show git diffs in files
-" Plug 'sheerun/vim-polyglot'                            " ? I Think it adds syntax highlighting for a lot of languages
+Plug 'sheerun/vim-polyglot'                            " ? I Think it adds syntax highlighting for a lot of languages
 Plug 'vim-airline/vim-airline'                         " Line on the bottom for showing various informations
 Plug 'evanleck/vim-svelte', {'branch': 'main'}         " Syntax highlighting for svelte
 Plug 'ryanoasis/vim-devicons'                          " Icons for NERDTree
 Plug 'Chiel92/vim-autoformat'                          " AutoFormat
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'lervag/vimtex'                                   " LaTeX Support
-Plug 'ziglang/zig.vim'
 
 " BUFFERLINE
 Plug 'kyazdani42/nvim-web-devicons'
@@ -55,13 +54,15 @@ set foldmethod=syntax
 set clipboard+=unnamedplus
 " For bufferline
 set termguicolors
+" Disable folding on file open
+set foldlevelstart=999
 
 let g:vim_json_conceal = 0
 let g:SuperTabDefaultCompletionType = "<c-n>"
 " Make NERDTree show hidden file
 let NERDTreeShowHidden=1
 " Set Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp', 'coc-cmake', 'coc-zig']
+let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp', 'coc-cmake']
 
 let g:prettier#autoformat = 0
 let g:prettier#autoformat_require_pragma = 0
