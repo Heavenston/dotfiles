@@ -9,6 +9,7 @@ zplug load
 alias vim="nvim"
 alias ls="exa -lF --icons --sort type"
 alias lsa="ls -a"
+alias mode="sudo cpupower frequency-set -g"
 
 eval "$(starship init zsh)"
 
