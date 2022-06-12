@@ -77,7 +77,7 @@ set guifont=FiraCode\ Nerd\ Font\ Mono:style=Medium,Regular:h12
 
 let mapleader = ","
 
-"" Bufferline config
+"" </ Bufferline config
 
 lua << EOF
 require("bufferline").setup {
@@ -87,12 +87,15 @@ require("bufferline").setup {
     }
 }
 EOF
-" Next buffer
 nnoremap <silent> gl :BufferLineCycleNext<CR>
-" Previous buffer
 nnoremap <silent> gh :BufferLineCyclePrev<CR>
 nnoremap <silent> gp :BufferLinePick<CR>
 nnoremap <silent> gb :BufferLinePickClose<CR>
+nnoremap <silent> gch :BufferLineCloseLeft<CR>
+nnoremap <silent> gcl :BufferLineCloseRight<CR>
+nnoremap <silent> gcf :BufferLineCloseRight<CR> :BufferLineCloseLeft<CR>
+
+"" /> End of bufferline config
 
 " jk to escape insert mode 
 inoremap jk <esc>
