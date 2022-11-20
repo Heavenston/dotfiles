@@ -12,11 +12,12 @@ ln -s "$SCRIPTPATH/down" /tmp/leftwm-theme-down
 picom --config "$SCRIPTPATH/picom/picom.conf" &> /dev/null &
 
 # Load the theme.toml config
-echo "LoadTheme $SCRIPTPATH/theme.toml" > "$XDG_RUNTIME_DIR/leftwm/commands.pipe"
+leftwm command "LoadTheme $SCRIPTPATH/theme.toml"
 
 # Load background
 feh --no-fehbg --bg-fill "$SCRIPTPATH/Backgrounds/0143.jpg"
-# Start networkManager applet
+
+# Start applets
 nm-applet &
 blueman-applet &
 

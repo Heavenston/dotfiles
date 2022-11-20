@@ -8,4 +8,5 @@ pkill picom
 pkill polybar
 pkill blueman-applet
 pkill nm-applet
+#pkill pasystray
 #pkill dunst

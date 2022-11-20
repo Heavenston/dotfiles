@@ -2,12 +2,16 @@ modkey = "Mod4"
 mousekey = "Mod4"
 workspaces = []
 tags = ["爵", "", "3", "4", "5", "6", "7", "8", "9"]
-layouts = ["MainAndVertStack", "Monocle", "MainAndHorizontalStack", "MainAndDeck"]
+layouts = ["MainAndVertStack", "Monocle", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal"]
 layout_mode = "Tag"
 scratchpad = []
 disable_current_tag_swap = true
 focus_behaviour = "ClickTo"
 focus_new_windows = true
+
+window_rules = [
+  { window_title = "pygame window", spawn_on_tag = 4, spawn_floating = true },
+]
 
 [[keybind]]
 command = "Execute"
@@ -100,16 +104,6 @@ key = "l"
 command = "FocusWorkspacePrevious"
 modifier = ["modkey"]
 key = "h"
-
-[[keybind]]
-command = "MoveWindowUp"
-modifier = ["modkey", "Shift"]
-key = "k"
-
-[[keybind]]
-command = "MoveWindowDown"
-modifier = ["modkey", "Shift"]
-key = "j"
 
 [[keybind]]
 command = "SwapTags"
