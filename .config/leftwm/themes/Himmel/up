@@ -23,11 +23,11 @@ blueman-applet &
 
 # Start polybar
 pkill polybar
-export index=0
-monitors=$(polybar -m | awk -F ':' '{ printf $1"\n" }' | tac)
+index=0
+monitors=$(polybar -m | awk -F ':' '{ printf $1"\n" }')
 while read -r display; do
-    MONITOR=$display polybar -c "$SCRIPTPATH/polybar.config" mainbar --reload &> /dev/null &
-    let index = index+1
+    MONITOR=$display polybar -c "$SCRIPTPATH/polybar.config" mainbar$index --reload &> /dev/null &
+    let index=index+1
 done <<< "$monitors"
 exit 0
 
