@@ -24,7 +24,7 @@ blueman-applet &
 # Start polybar
 pkill polybar
 export index=0
-monitors="$(polybar -m | sed s/:.*// | tac)"
+monitors=$(polybar -m | awk -F ':' '{ printf $1"\n" }' | tac)
 while read -r display; do
     MONITOR=$display polybar -c "$SCRIPTPATH/polybar.config" mainbar --reload &> /dev/null &
     let index = index+1
