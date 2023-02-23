@@ -9,14 +9,10 @@
            "command": "opam",
            "args": ["config", "exec", "--", "ocamllsp"],
            "filetypes": ["ocaml", "reason"]
-        },
-        "clangd": {
-            "command": "clangd",
-            "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
         }
     },
     "svelte.enable-ts-plugin": true,
-    "rust-analyzer.inlayHints.chainingHints": true,
-    "rust-analyzer.inlayHints.parameterHints": true
+    "rust-analyzer.completion.autoimport.enable": true,
+    "rust-analyzer.hover.documentation.enable": true,
+    "rust-analyzer.server.path": "/usr/bin/rust-analyzer"
 }

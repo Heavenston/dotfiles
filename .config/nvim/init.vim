@@ -8,7 +8,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'cespare/vim-toml'                                " Add toml syntax highlithing
 Plug 'yggdroot/indentline'                             " Add a line for indentation size
-Plug 'ervandew/supertab'                               " For autocompletion ?
+" Plug 'ervandew/supertab'                               " For autocompletion ?
 Plug 'scrooloose/nerdtree'                             " File tree
 Plug 'Xuyuanp/nerdtree-git-plugin'                     " Adds file modifications in nerdTree
 Plug 'tpope/vim-fugitive'                              " Best GIT plugin for vim ?
@@ -62,7 +62,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " Make NERDTree show hidden file
 let NERDTreeShowHidden=1
 " Set Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp', 'coc-cmake']
+let g:coc_global_extensions = ['coc-json', 'coc-rust-analyzer', 'coc-go', 'coc-tsserver', 'coc-svelte', 'coc-css', 'coc-pyright', 'coc-omnisharp', 'coc-cmake', 'coc-clangd']
+" :Explore better style
+let g:netrw_liststyle = 3
 
 let g:prettier#autoformat = 0
 let g:prettier#autoformat_require_pragma = 0
@@ -96,6 +98,13 @@ nnoremap <silent> gcl :BufferLineCloseRight<CR>
 nnoremap <silent> gcf :BufferLineCloseRight<CR> :BufferLineCloseLeft<CR>
 
 "" /> End of bufferline config
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+inoremap <silent><expr> <c-space> coc#refresh()
 
 " jk to escape insert mode 
 inoremap jk <esc>
