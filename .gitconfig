@@ -1,0 +1,65 @@
+[user]
+	email = malolegendrelemaire@@gmail.com
+	name = Heavenston
+[credential]
+	helper = cache
+[init]
+	defaultBranch = main
+[alias]
+	# Complex
+	amend = commit --amend --no-edit
+	unstage = restore --staged
+
+	# Mispells
+	poul = pull
+	poush = push
+	poull = pull
+	pesh = push
+	peush = push
+	
+	# One letters
+	s = status
+	b = branch
+	a = add
+	d = diff
+	c = clone
+
+	# Shortcuts
+	cu = checkout
+	co = checkout
+
+	ba = branch
+	bra = branch
+	bran = branch
+	br = branch
+	brn = branch
+	brnc = branch
+	brnch = branch
+	
+	cl = clone
+	cln = clone
+	clo = clone
+	clon = clone
+	clone = clone
+
+	ps = push
+	pu = push
+	pus = push
+	
+	cm = commit
+	ci = commit
+	pl = pull
+	rs = reset
+	rt = restore
+	st = status
+	sta = status
+	stat = status
+	ad = add
+	di = diff
+	dif = diff
+[pull]
+	rebase = true
+[protocol "file"]
+	allow = always
+[push]
+	autoSetupRemote = true
