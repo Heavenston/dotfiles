@@ -1,9 +1,6 @@
 # ~/.zshrc
 source ~/.zplug/init.zsh
 
-# ZSH Better vim mode
-zplug "jeffreytse/zsh-vi-mode"
-
 zplug load
 
 alias vim="nvim"
@@ -21,6 +18,8 @@ alias coucou="echo coucou"
 alias cls="clear ; "
 alias vent="sudo dell-bios-fan-control 0 ; sudo i8kctl fan 2 2"
 alias pasvent="sudo dell-bios-fan-control 1"
+alias h="history 0"
+alias c="clear ; exa -lFa --icons --sort type"
 
 eval "$(starship init zsh)"
 
@@ -32,9 +31,11 @@ setopt histignoredups
 setopt extended_glob
 setopt extendedglob
 setopt HIST_IGNORE_SPACE
+# No blob not found errors
+setopt +o nullglob
 
-export PATH=$PATH:"$HOME/.cargo/bin"
-export EDITOR="vim"
+export PATH=$PATH:"$HOME/.cargo/bin":"$HOME/go/bin"
+export EDITOR="helix"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -52,3 +53,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Python
 export PATH="/home/malo/.local/bin:$PATH"
+
+# Nodejs globals
+export PATH="$(npm root -g):$PATH"
