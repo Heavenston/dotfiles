@@ -1,0 +1,41 @@
+[[language]]
+name = "c"
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "cpp"
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "scheme"
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "rust"
+indent = { tab-width = 4, unit = " " }
+auto-format = false
+language-server.command = "rust-analyzer"
+language-server.timeout = 99999999
+
+[[language]]
+name = "go"
+indent = { tab-width = 4, unit = " " }
+auto-format = false
+
+[[language]]
+name = "zig"
+indent = { tab-width = 4, unit = " " }
+auto-format = false
+
+[[language]]
+name       = "bqn"
+shebangs   = ["bqn"]
+file-types = ["bqn"]
+roots      = []
+scope      = "scope.bqn"
+indent     = { tab-width = 4, unit = " " }
+
+[[grammar]]
+name = "bqn"
+source = { git = "https://github.com/dunyakirkali/tree-sitter-bqn", rev = "170cf86b9759ccb67571493041260346af226c29" }
+

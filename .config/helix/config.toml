@@ -1,0 +1,25 @@
+theme = "bogster"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+auto-pairs = false
+rulers = [80]
+mouse = false
+
+[editor.indent-guides]
+render = true
+character = "|"
+
+[editor.file-picker]
+hidden = false
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[keys.insert]
+j = { k = "normal_mode" }
