@@ -16,6 +16,7 @@ leftwm command "LoadTheme $SCRIPTPATH/theme.toml"
 
 # Load background
 feh --no-fehbg --bg-fill "$SCRIPTPATH/Backgrounds/0143.jpg"
+# feh --no-fehbg --bg-fill "$SCRIPTPATH/Backgrounds/moche.jpg"
 
 # Start applets
 nm-applet &
