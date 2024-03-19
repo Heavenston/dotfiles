@@ -1,10 +1,13 @@
 theme = "bogster"
+# theme = "amberwood"
+# theme = "autumn"
 
 [editor]
+bufferline = "multiple"
 line-number = "relative"
 cursorline = true
 color-modes = true
-auto-pairs = false
+auto-pairs = true
 rulers = [80]
 mouse = false
 
@@ -19,7 +22,12 @@ hidden = false
 insert = "bar"
 
 [editor.lsp]
-display-inlay-hints = true
+display-inlay-hints = false
 
 [keys.insert]
 j = { k = "normal_mode" }
+
+[keys.normal.space]
+v = ":reload"
+V = ":reload-all"
+l = ":lsp-restart"

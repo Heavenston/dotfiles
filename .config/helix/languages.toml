@@ -1,30 +1,30 @@
 [[language]]
 name = "c"
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "cpp"
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "scheme"
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "rust"
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 auto-format = false
-language-server.command = "rust-analyzer"
-language-server.timeout = 99999999
+# language-server.command = "rust-analyzer"
+# language-server.timeout = 99999999
 
 [[language]]
 name = "go"
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 auto-format = false
 
 [[language]]
 name = "zig"
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 auto-format = false
 
 [[language]]
@@ -39,3 +39,10 @@ indent     = { tab-width = 4, unit = " " }
 name = "bqn"
 source = { git = "https://github.com/dunyakirkali/tree-sitter-bqn", rev = "170cf86b9759ccb67571493041260346af226c29" }
 
+[language-server.godot]
+command = "ncat" # or nc
+args = [ "127.0.0.1", "6005"]
+
+[[language]]
+name = "gdscript"
+language-servers = ["godot"] 
