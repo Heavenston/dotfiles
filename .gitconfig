@@ -1,6 +1,6 @@
 [user]
-	email = malolegendrelemaire@@gmail.com
-	name = Heavenston
+	email = malo.legendre-lemaire@epita.fr
+	name = Malo Legendre-Lemaire
 [credential]
 	helper = cache
 [init]
@@ -9,6 +9,9 @@
 	# Complex
 	amend = commit --amend --no-edit
 	unstage = restore --staged
+	ts = diff --stat
+	force = push --force-with-lease
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(normal)%s%C(reset) %C(dim white)%an%C(reset) %C(dim blue)(%ar)'
 
 	# Mispells
 	poul = pull
