@@ -1,6 +1,8 @@
-import = ["/home/malo/.config/alacritty/themes/render.yaml"]
+[general]
+import = ["~/.config/alacritty/themes/iterm.toml"]
 
 [font]
+# size = 10
 size = 11
 # size = 12
 # size = 13
@@ -22,7 +24,8 @@ family = "Fira Code"
 style = "Regular"
 
 [window]
-opacity = 0.8
+opacity = 0.95
+dynamic_title = true
 
 [window.padding]
 x = 4

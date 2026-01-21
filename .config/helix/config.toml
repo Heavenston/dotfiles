@@ -1,15 +1,31 @@
 theme = "bogster"
+# theme = "vim-dark-contrast"
 # theme = "amberwood"
 # theme = "autumn"
 
 [editor]
-bufferline = "multiple"
+# bufferline = "multiple"
+bufferline = "never"
 line-number = "relative"
 cursorline = true
 color-modes = true
 auto-pairs = true
+auto-format = false
 rulers = [80]
 mouse = false
+scrolloff = 10
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator", "file-type"]
+center = ["version-control"]
+right = ["diagnostics", "primary-selection-length", "selections", "register", "position", "file-encoding"]
+separator = "│"
+mode.normal = "NOR"
+mode.insert = "INS"
+mode.select = "SEL"
 
 [editor.indent-guides]
 render = true

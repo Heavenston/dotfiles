@@ -11,11 +11,65 @@ name = "scheme"
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
+name = "javascript"
+indent = { tab-width = 2, unit = "  " }
+file-types = ["js", "mjs", "jsx", "mongodb"]
+
+[[language]]
 name = "rust"
 indent = { tab-width = 4, unit = "    " }
 auto-format = false
-# language-server.command = "rust-analyzer"
-# language-server.timeout = 99999999
+
+[language-server.rust-analayzer]
+command = "rust-analyzer"
+timeout = 99999999
+
+[language-server.rust-analyzer.config]
+# cargo.target = "wasm32-unknown-unknown"
+cargo.allFeatures = true
+inlayHints.bindingModeHints.enable = false
+inlayHints.closingBraceHints.minLines = 10
+inlayHints.closureReturnTypeHints.enable = "with_block"
+inlayHints.discriminantHints.enable = "fieldless"
+inlayHints.lifetimeElisionHints.enable = "skip_trivial"
+inlayHints.typeHints.hideClosureInitialization = false
+# checkOnSave.command = "clippy"
+
+diagnostics.disabled = ["unlinked-file"]
+
+[[language]]
+name = "typescript"
+language-servers = [ { except-features = ["format"], name = "typescript-language-server" }, "eslint" ]
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = 'prettier', args = ["--stdin-filepath", "file.ts"] }
+auto-format = true
+
+[language-server.eslint]
+command = "vscode-eslint-language-server"
+args = ["--stdio"]
+
+[language-server.eslint.config]
+validate = "on"
+experimental = { useFlatConfig = true }
+rulesCustomizations = []
+run = "onType"
+problems = { shortenToSingleLine = false }
+nodePath = ""
+
+[language-server.eslint.config.codeAction]
+[language-server.eslint.config.codeAction.disableRuleComment]
+enable = true
+location = "separateLine"
+
+[language-server.eslint.config.codeAction.showDocumentation]
+enable = true # why?
+
+[language-server.eslint.config.codeActionOnSave]
+enable = true
+mode = "fixAll"
+
+[language-server.eslint.config.workingDirectory]
+mode = "location" # do we need to override this?
 
 [[language]]
 name = "go"
@@ -46,3 +100,38 @@ args = [ "127.0.0.1", "6005"]
 [[language]]
 name = "gdscript"
 language-servers = ["godot"] 
+
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = { typescript = { tsdk = "/usr/lib/node_modules/typescript/lib" }}
+
+[[language]]
+name = "astro"
+scope = "source.astro"
+injection-regex = "astro"
+file-types = ["astro"]
+language-servers = ["astro-ls"]
+formatter = { command = "prettier", args = ["--plugin", "prettier-plugin-astro", "--parser", "astro"] }
+auto-format = true
+
+# [[language]]
+# name = "ispc"
+# scope = "source.ispc"
+# file-types = ["ispc", "isph"]
+# grammar = "c" # Use the built-in C grammar instead of the custom one
+
+# NOTE: This doesn't work i dont rly now why
+[[language]]
+name = "ispc"
+scope = "source.ispc"
+injection-regex = "ispc"
+file-types = ["ispc"]
+comment-tokens = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 4, unit = "    " }
+roots = [".git"]
+
+[[grammar]]
+name = "ispc"
+source = { git = "https://github.com/tree-sitter-grammars/tree-sitter-ispc", rev = "master" }

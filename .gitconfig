@@ -8,15 +8,29 @@
 [alias]
 	# Complex
 	amend = commit --amend --no-edit
+	edit = commit --amend --edit
 	unstage = restore --staged
 	ts = diff --stat
 	force = push --force-with-lease
+	l = lg -n 10
 	lg = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(normal)%s%C(reset) %C(dim white)%an%C(reset) %C(dim blue)(%ar)'
+	rl = reflog -n 10
+	rcm = commit -c HEAD
+
+	pd = !git diff | diff-so-fancy
+	fancy = !git diff | diff-so-fancy
+
+	ignore = !$EDITOR .git/info/exclude
+	skip = update-index --skip-worktree
+	unskip = update-index --no-skip-worktree 
+	skipped = !git ls-files -v | grep '^S' | sed 's/^S //'
 
 	# Mispells
+	pul = pull
 	poul = pull
 	poush = push
 	poull = pull
+	psuh = push
 	pesh = push
 	peush = push
 	
@@ -66,3 +80,8 @@
 	allow = always
 [push]
 	autoSetupRemote = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
