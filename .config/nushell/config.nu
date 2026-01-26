@@ -3,6 +3,14 @@
 $env.EDITOR = "helix"
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
 
+$env.config.edit_mode = 'vi'
+$env.config.history.max_size = 1_000_000
+$env.config.show_banner = false
+
+# Starship setup
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+
 # Renames/Overrides
 alias hx = helix
 alias cat = bat -p
