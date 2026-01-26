@@ -16,7 +16,7 @@ mouse = false
 scrolloff = 10
 
 [editor.auto-save]
-focus-lost = true
+focus-lost = false
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator", "file-type"]

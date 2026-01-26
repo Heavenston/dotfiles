@@ -1,5 +1,6 @@
 [user]
-	email = malo.legendre-lemaire@epita.fr
+	# email = malo.legendre-lemaire@epita.fr
+	email = malolegendrelemaire@gmail.com
 	name = Malo Legendre-Lemaire
 [credential]
 	helper = cache

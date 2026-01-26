@@ -1,0 +1,77 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 20,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "clock#datetime",
+        "battery",
+        "custom/uptime",
+        "disk",
+        "bluetooth",
+        "tray"
+    ],
+
+    // "hyprland/workspaces": {
+    //     "format": "{id}",
+    //     "on-click": "activate",
+    //     "all-outputs": false,
+    //     "active-only": false,
+    //     "persistent-workspaces": {
+    //         "*": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    //     }
+    // },
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "active-only": false,
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch split-cycleworkspaces -1",
+        "on-scroll-down": "hyprctl dispatch split-cycleworkspaces +1",
+        "all-outputs": false
+    },
+
+    "clock#datetime": {
+        "format": "{:%Y-%m-%d %H:%M:%S}",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "battery": {
+        "bat": "BAT0",
+        "format": "BAT:{capacity}%",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "tooltip": false
+    },
+
+    "custom/uptime": {
+        "exec": "uptime -p | sed 's/up //; s/ days/d/; s/ day/d/; s/ hours/h/; s/ hour/h/; s/ minutes/m/; s/ minute/m/; s/,//g'",
+        "interval": 60,
+        "tooltip": false
+    },
+
+    "disk": {
+        "path": "/",
+        "format": "{free}",
+        "interval": 30,
+        "tooltip": false
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    },
+
+    "bluetooth": {
+        "format": "   ",
+        "on-click": "overskride",
+        "tooltip-format": "{controller_alias}\t{controller_address}"
+    }
+}
