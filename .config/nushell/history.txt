@@ -1,0 +1,1651 @@
+ls
+l
+c
+clear
+ls
+cd Clones
+ls
+cd linux-g14/
+paru
+cd ..
+clear
+ls
+c
+l
+c
+clear
+ls
+l
+clear
+ls
+usermod 
+usermod --help
+usermod malo -s nu
+exit
+ls
+exit
+ls
+cd ~
+clear
+ls
+hx
+vim ~/.config/nushell/config.nu
+config nu
+clear
+config nu
+$env.EDITOR=helix
+$env.EDITOR =helix
+$env.EDITOR = helix
+$env.EDITOR = "helix"
+clera
+clear
+config nu
+paru -S exa
+paru -S eza ; paru -R exa
+paru -R exa
+clear
+c
+ls
+c
+cd ~
+c
+ls
+c
+exit
+c
+cd ~
+c
+ls
+c
+ls
+exit
+ls
+clear
+ls
+cd ~
+c
+cd Dev
+c
+ls
+c
+cd ~
+c
+ls
+c
+ls --help
+man sl
+man ls
+clear
+ls
+c
+help ls
+ls
+help ls
+ls -s
+cd ~
+ls
+ls -s
+clear
+ls
+ls -l
+ls -lah
+ls -lh
+clear
+ls -l
+clear
+ls -l
+clear
+ls --help
+ls -s
+ls -as
+clear
+ls -l
+ls -s
+ls
+man ls
+cls
+exti
+exit
+cd ~
+cls
+c
+hx
+clear
+hx --help
+clear
+help hx
+help helix
+clear
+cd Dev
+c
+clear 
+exit
+vim ~/.zshrc
+exit
+exit
+ls
+cd Dev
+c
+cd Clones/
+c
+cd ..
+c
+cd Forks/
+c
+g clone git@github.com:Heavenston/dwm.git
+c
+cd dwm/
+c
+cat README
+c
+open README
+C
+c
+show README
+c
+imv
+c
+img2txt --help
+clear
+c
+open util.c
+c
+cat
+c
+bat
+c
+cat LICENSE
+c
+make
+c
+sudo vim /usr/share/xsessions/dwm.desktop
+sudo mkdir -p /usr/share/xsessions
+sudo vim /usr/share/xsessions/dwm.desktop
+sudo hx /usr/share/xsessions/dwm.desktop
+sudo helix /usr/share/xsessions/dwm.desktop
+sudoedit /usr/share/xsessions/dwm.desktop
+cd Dev/Forks/
+c
+cd dwm/
+c
+cp dwm /usr/bin
+sudo cp dwm /usr/bin
+cls
+c
+sudoedit /usr/share/xsessions/dwm.desktop
+clear
+exit
+cd Dev/Forks/
+clear
+ls
+g clone git@github.com:Heavenston/dmenu.git
+cd dmenu
+ls
+make
+clear
+ls
+c
+cat dmenu_path
+cat dmenu
+clear
+ls
+make
+make clean
+c
+g st
+g a .
+c
+g st
+c
+make 
+c
+./dmenu
+c
+clear
+c
+./dmenu
+c
+./dmenu_run
+c
+./dmenu_path
+c
+cd ../dwm
+c
+cat config.h
+clear
+bat config.h
+paru -S bat
+bat config.h
+bat -P config.h
+clear ; bat -P config.h
+c
+clear
+rm /usr/bin/dwm
+sudo rm /usr/bin/dwm
+clear
+c
+sudo cp dwm /usr/local/bin
+cd ../dmenu/
+c
+sudo cp dmenu dmenu_path dmenu_run /usr/local/bin
+c
+paru -S fzf
+clear
+ls
+cat config.h
+c
+g l
+g show HEAD~1
+c
+g l
+g show HEAD~3
+g show HEAD~2
+g show HEAD~3
+g show HEAD~4
+g show HEAD~5
+clear
+c
+cat config.h
+dmenu_rzun
+dmenu_run
+clear
+cat ../dwm/config.h
+dmenu_run 
+clear
+g l
+g show HEAD~1
+cd ../dwm
+lcear
+clear
+ls
+cat install.sh
+c
+cat Makefile
+whereis dwm
+make install
+sudo make install
+whereis dwm
+clear
+ls
+cd ..
+c
+cd dmenu
+c
+make install
+sudo make install
+bthop
+xrandr
+sudoedit /usr/share/xsessions/dwm.desktop
+clear
+supergfxctl -m Integrated
+sudoedit /usr/share/xsessions/dwm.desktop
+cat ~/.Xresources
+pacman -Qs xf86-video-intel
+cat ~/.Xresources
+vim ~/.Xresources
+vim ~/.Xresources
+hx ~/.Xresources
+exit
+hx ~/.Xresources
+c
+bash -c 'picom &'
+clear
+cd Dev/Forks/dwm/
+c
+vim config.h
+hx config.h
+paru -S ttf-mac-fonts noto-fonts-*
+paru -S ttf-mac-fonts noto-fonts
+bash -c 'sudo pacman -S $(pacman -Ssq noto-fonts)'
+clear
+cat
+cat ~/.config/ghostty/config
+paru -S ttf-fira-code
+clear
+c
+clear
+ls
+c
+hx ~/.config/ghostty/config
+clear
+bash -c 'picom &'
+clear
+c
+cd Dev
+c
+cd ~/Dev
+c
+mkcd 
+hx ~/.Xresources
+hx 
+alias hx = helix
+clear
+sudoedit /usr/share/xsessions/dwm.desktop
+$env.EDITOR = "helix"
+sudoedit /usr/share/xsessions/dwm.desktop
+c
+helix ~/.Xresources
+c
+config nu
+clear
+config nu
+$env.EDITOR = "helix"
+mode ondemand
+cls
+rebboot
+reboot
+sudoedit /usr/share/xsessions/dwm.desktop
+xlayoutdisplay
+paru -S xlayoutdisplay
+xlayoutdisplay 
+xlayoutdisplay --help
+xlayoutdisplay -d 200
+xlayoutdisplay --help
+xlayoutdisplay -p 1
+xlayoutdisplay -p HDMI-1
+clear
+bash -c 'picom &'
+clear
+bash -c 'picom &' && xlayoutdisplay -p HTMI-1
+bash -c 'picom &' and xlayoutdisplay -p HTMI-1
+bash -c 'picom &'; xlayoutdisplay -p HTMI-1
+clear; bash -c 'picom &'; xlayoutdisplay -p HTMI-1
+pkill picom
+clear; bash -c 'picom &'; xlayoutdisplay -p HTMI-1
+clear; bash -c 'pkill picom ; picom &'; xlayoutdisplay -p HTMI-1
+clear; bash -c 'pkill picom ; picom &'; xlayoutdisplay -p HDMI-1
+cls
+c
+cls
+dc
+man dc
+clear
+dc
+ddc
+exit
+ddc
+fd . -H --type directory | fzf
+paru -S fd
+fd
+clear
+fd . -H --type directory | fzf
+dc
+exit
+cllear
+clear
+dc
+exit
+dc
+clear
+cd Dev
+c
+dc
+btop
+hx
+dc
+c
+hx
+c
+dc
+c
+fd . -H --type directory | fzf
+echo $'(fd . -H --type directory | fzf)'
+echo Feur: $'(fd . -H --type directory | fzf)'
+ddc
+exit
+ddc
+c
+hx
+dc
+c
+hx
+c
+exit
+vbetool dpms off<\n>
+vbetool dpms off
+xset dpms force off<\n>
+xset dpms force off
+clear
+c
+dc
+c
+exit
+sudo pacman -S hyprland
+start-hyprland
+vim ~/.config/ghostty/config
+hx ~/.config/ghostty/config
+exit
+clear
+exit
+nautilus
+paru -S dolphin
+paru -R nautilus
+hyprlauncher
+exit
+clear
+paru -S dunst
+systemctl enable dunst
+dunst
+paru -Q pipewire
+paru -Q xdg-
+paru -Q | grep xdg-
+pacman -S xdg-desktop-portal-hyprland
+sudo pacman -S xdg-desktop-portal-hyprland
+clear
+paru -S hyprpolkitagent
+paru -Q | grep qt5
+paru -Q | grep qt4
+paru -Q | grep qt6
+paru -S qt5-wayland
+paru -S qt6-wayland
+nm-applet
+clear
+exit
+hx ~/.config/hypr/hyprland.conf
+paru -S waybar
+paru -S hyprpaper
+paru -S hyprlauncher
+exit
+exit
+hx
+dc
+c
+dc
+c
+dc
+c
+paru -R xlayoutdisplay
+clear
+dc
+c
+wev
+paru -S wev
+wev
+exit
+hx
+exit
+hyprctl monitors all
+hyprpaper 
+hyprpaper --help
+clear
+hm
+pkill waybar
+waybar
+clear
+waybar
+c
+waybar
+dc
+c
+hx
+c
+paru -S mullvad-vpn
+cd Dev
+c
+cd Forks
+c
+asusctl
+asusctl backlight
+sudo pacman -S brightnessctl
+brightnessctl
+brightnessctl set 80%
+brightnessctl set 100%
+sudo systemctl status asusd
+clear
+nmcli
+nmcli device wlp194s0 wifi 
+nmcli device wlp194s0 
+nmcli device wlp194s0 --help
+nmcli device --help
+nmcli device wifi list
+nmcli device wifi conmnect Livebox-1E10 password 'ericisa5'
+nmcli device wifi connect Livebox-1E10 password 'ericisa5'
+nm-connection-manager
+nm-applet
+paru -S nm-applet
+paru -S iwd
+sudoedit /etc/NetworkManager/conf.d/wifi_backend.conf
+c
+systemctl restart NetworkManager
+exit
+nmcli device wifi connect Livebox-1E10 password 'ericisa5'
+paru -S noto-fonts-emoji
+c
+g clone git@github.com:Heavenston/slstatus.git ; cd slstatus
+c
+g co malo
+c
+dc
+c
+g st
+c
+g st
+c
+dc
+c
+claude
+curl -fsSL https://claude.ai/install.sh | bash
+claude
+config nu
+dc
+c
+c
+pkill waybar
+exit
+nohup --help
+nohup bash -c 'waybar &' &> /dev/null </dev/null
+c
+rm nohup.out
+pkill waybar
+c
+cc
+c
+man nohup
+nohup bash -c 'waybar &' > /dev/null < /dev/null
+pkill waybar ; nohup bash -c 'waybar &' > /dev/null < /dev/null
+c
+rm nohup.out
+c
+pkill waybar ; nohup bash -c 'waybar &' > /dev/null < /dev/null
+pkill waybar ; nohup bash -c 'waybar &'
+pkill waybar && waybar -c ./waybar-config.json -s ./waybar-style.css &
+pkill waybar ; waybar -c ./waybar-config.json -s ./waybar-style.css &
+pkill waybar ; nohup bash -c 'waybar &'
+dc
+c
+hx
+exit
+c
+cls
+l
+cls
+ls
+cd Pictures/
+c
+mkcd Backgrounds
+c
+mkcd Backgroudns
+mkcd Backgrounds
+c
+mkdir Backgruonds
+c
+rm Backgruonds/
+c
+mkdir Backgrounds
+c
+cd Backgrounds/
+c
+mv ~/Downloads/geometric-purple-3840x2160-24844.jpg .
+c
+files
+c
+dolphin
+dolphin .
+c
+cd Pictures/Backgrounds/
+c
+pwdk
+pwd
+hyprpaper 
+hyprpaper  --help
+pkill hyprpaper
+hyprpaper &
+bash -c 'hyprpaper &'
+c
+pkill tmux
+c
+cls
+dc
+c
+claude
+dc
+c
+hx
+c
+rm hyprlauncher.toml
+c
+hx
+c
+rm -rf ~/.config/hyprlauncher/
+clear ; claude
+hx
+c
+g st
+g clean -fd
+c
+gs t
+c
+g st
+c
+nmcli device wifi connect Livebox-1E10 password 'ericisa5'
+paru -R wpa-supplicant
+paru -Q | grep wpa
+paru -R wpa_supplicant
+paru -R wpa_supplicant --help
+systemctl stop wpa_supplicant
+systemctl status wpa_supplicant
+nmcli device wifi connect Livebox-1E10 password 'ericisa5'
+iwctl
+systemctl restart NetworkManager
+systemctl status NetworkManager
+systemctl status wpa_supplicant
+hyprpaper &
+bash -c 'hyprpaper &'
+cls
+dc
+c
+./dmenu_run
+clear
+c
+claude resume
+nmcli device wifi connect Livebox-1E10 password 'ericisa5'
+nm-connection-manager
+nm-connection-editor
+fd
+clear
+fd '802-11-wireless-security.key-mgmt'
+fd '802-11-wireless-security.key-mgmt' /
+fd '802-11-wireless-security.key-mgmt'
+fd 'key-mgmt'
+fd 'key-mgmt' /
+cd /
+sudo fd 'key-mgmt'
+reboot
+ping google.com
+systemctl status mullvad-vpn
+systemctl status mullvad_spn
+systemctl status mullvad_vpn
+systemctl list-
+systemctl help
+systemctl --help
+systemctl list-units
+systemctl disable mullvad-daemon
+clear
+dc
+cd Pictures/Backgrounds/c
+cd Pictures/Backgrounds/
+c
+mv ~/Downloads/weichao-deng-7Hnu_Faey2U-unsplash.jpg
+mv ~/Downloads/weichao-deng-7Hnu_Faey2U-unsplash.jpg .
+c
+pkill hyprpaper
+bash -c 'pkill hyprpaper ; hyprpaper &'
+dc
+c
+dc
+c
+hx
+c
+pkill tmux
+dc
+c
+make ; sudo make install
+c
+dc
+c
+dc
+c
+paru -S tofi
+tofi
+clear
+tofi-run 
+tofi-drun 
+tofi-run 
+tofi-drun 
+tofi-run 
+pkill dmenu
+c
+dc
+c
+dc
+c
+pkill tmux
+cln
+cls
+paru -S godot
+cls
+cd Dev
+c
+mkcd
+help mkdir
+c
+clear
+ls
+cd Dev
+c
+rm ~/nohup.out
+c
+cls
+exit
+cd Dev/Clones/c
+cd Dev/Clones/
+c
+cd ..
+c
+mkdir Godot
+c
+mkdir Godot/feur
+ls Godot
+rm -rf Godot
+c
+exit
+cd Dev
+c
+mkcd Godot
+c
+cd Dev
+c
+cd Godot
+c
+g clone git@github.com:Heavenston/firalux.git
+cd firalux
+c
+cat ~/.gitconfig
+hx ~/.gitconfig
+c
+dc
+c
+exit
+c
+clear
+ls
+dc
+c
+scons
+paru -S scons
+scons
+clear
+ls
+scons platform=linux
+c
+g pull --recursive
+c
+g submodule init
+c
+cd godot-cpp/
+c
+g pull
+c
+git submodule update --init --recursive
+git submodule update --recursive
+c
+git submodule update --recursive
+git submodule update --init --recursive
+c
+git submodule update --init --recursive
+c
+cd ..
+c
+scons platform=linux
+c
+ls out
+ls
+c
+ls
+ls -T
+tree
+help ls
+ls -f
+ls -a
+ls -as
+c
+scons platform=linux template=release
+scons platform=linux target=release
+scons platform=linux target=template_release
+c
+sudo pacman -Syu mesa vulkan-radeon linux-firmware
+reboot
+paru -S spotify
+clear
+pipewire
+paru -Q | grep pipewire
+systemctl status pipewire
+systemctl list-units | grep pipewire
+paru -S pirewire
+pirewire
+paru -S pirewire
+pacman -Syy
+sudo pacman -Syy
+paru -S pirewire
+paru -S pipewire
+pipewire
+systemctl list-units | grep pipewire
+systemctl list-units
+paru -S cable
+paru -S jack
+paru -R pipewire
+paru -R pipewire-jack
+paru -S pipewire-jack
+paru -S 
+paru -S jack-example-tools
+jack_control_client 
+clear
+systemctl list-units
+sudo systemctl list-units
+sudo systemctl enable jack
+sudo systemctl enable jackd
+sudo systemctl enable pipewire
+jackd 
+paru -S jack2
+paru -S jack
+jackd
+paru -S ffado
+paru -S pipewire-ffado
+jackd
+cls ; sudo jackd
+jack_control
+systemctl list-units
+paru -S jackdbug
+paru -S jackdbus
+paru -S jack_control
+jackd
+cls sudo jackd
+cls ; sudo jackd
+cls ; sudo jackd -r
+cls ; sudo jackd --realtime
+cls ; sudo jackd --realtime --name feur
+paru -S pipewire-jack
+systemctl list-units
+clear
+paru -S pipewire-jack
+sudo systemctl enable pipewire
+systemctl enable pipewire
+systemctl --user enable pipewire
+systemctl --user start pipewire
+paru -S carla
+paru -R carla
+paru -S jack_mixer
+jack_control start
+paru -Q | grep jack
+paru -Q | grep pipewire
+paru -R pipewire-jack
+paru -R pipewire-jack jack_mixer jack-example-tools
+clear
+c
+cls
+paru -Q | grep pipewire
+paru -S cable
+paru -R cable
+clear
+paru -R cable
+paru -S wireplumber
+wireplumber 
+systemctl status wireplumber
+systemctl --user stop pipewire
+systemctl --user start pipewire
+systemctl --user start wireplumber
+systemctl --user status wireplumber
+systemctl --user stop wireplumber
+systemctl --user start wireplumber
+systemctl --user status wireplumber
+clear
+wpctl
+wpctl status
+clear
+paru -Q | grep pipewire
+paru -S 
+paru -S pipeweaver
+paru -S pipeweaver-git
+clear
+pipeweaver-daemon 
+paru -R pipeweaver-git
+paru -Qdtq | paru -Rns -
+pacman -Qdtq | pacman -Rns -
+sudo pacman -Qdtq | sudo pacman -Rns -
+paru -Qdtq | paru -Rns -
+paru -Qdtq 
+paru -Rns aj-snapshot bc boost editorconfig-core-c folks jack_delay libedataserverui4 libxklavier pahole python-build python-installer python-jack-client python-pyalsaaudio python-pyliblo3 python-pyqt6 rust-bindgen scdoc xorg-xrandr
+paru -Qdtq | paru -R -
+paru -Qdtq 
+sudo pacman -Qdtq 
+clear
+pacman -Qqd | pacman -Rsu --print -<\n>
+paru -S rustup
+pacman -Qqd | pacman -Rsu --print -<\n>
+pacman -D --asexplicit rustup
+sudo pacman -D --asexplicit rustup
+pacman -Qqd | pacman -Rsu --print -<\n>
+sudo pacman -D --asexplicit cmake
+pacman -Qqd | pacman -Rsu --print -<\n>
+pacman -Qqd | pacman -Rsu --print -
+paru -R c-ares
+paru -R c-ares nodejs
+c
+cls
+clear
+1
+clear
+2
+clear
+3
+pkill tmux
+paru -S multimc
+paru -R multimc
+paru -R prismmc
+paru -S prismlauncher
+clear
+paru -S steam
+clear
+paru -S steam
+sudo pacman -S steam
+hx /etc/pacman.conf
+sudoedit /etc/pacman.conf
+paru -Syu --noconfirm
+sudo pacman -S steam
+prismlauncher 
+paru -R prismlauncher
+paru -S prismlauncher
+steam 
+hyprrm
+hyprm
+hyprpm
+clear
+hyprpm
+hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
+ip a
+hyprpm update
+clear
+exit
+hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
+hyprpm enable split-monitor-workspaces
+hyprpm reload
+pkill waybar
+exit
+cls
+paru -S noto-fonts-emoji
+paru -S ttf-twemoji-color
+
+btop
+paru -S woff2-font-awesome ttf-joypixels nerd-fonts noto-fonts-emoji ttf-noto-emoji-monochrome ttf-twemoji
+sudo ln -sf /usr/share/fontconfig/conf.avail/75-twemoji.conf /etc/fonts/conf.d/75-twemoji.conf
+cls
+c
+paru -S prismlauncher-git
+paru -R prismlauncher
+rfkill block wlan0
+rfkill block wlan
+ip a
+clear
+ip a
+paru -S prismlauncher-git
+btop
+ip a
+paru -S prismlauncher-git
+hyprctl hyprpaper --help
+hyprctl hyprpaper reload
+hyprctl hyprpaper
+hyprctl hyprpaper reload
+hyprctl hyprpaper wallpaper '/home/malo/Pictures/Backgrounds/weichao-deng-7Hnu_Faey2U-unsplash.jpg'
+hyprctl hyprpaper wallpaper path '/home/malo/Pictures/Backgrounds/weichao-deng-7Hnu_Faey2U-unsplash.jpg'
+hyprctl hyprpaper wallpaper --path '/home/malo/Pictures/Backgrounds/weichao-deng-7Hnu_Faey2U-unsplash.jpg'
+pkill hyprpaper
+bash -c 'hyprpaper &'
+hyprctl hyprpaper 
+hyprctl hyprpaper --help
+hyprctl hyprpaper wallpaper --path '/home/malo/Pictures/Backgrounds/weichao-deng-7Hnu_Faey2U-unsplash.jpg'
+hyprctl hyprpaper wallpaper path '/home/malo/Pictures/Backgrounds/weichao-deng-7Hnu_Faey2U-unsplash.jpg'
+hyprctl hyprpaper wallpaper --help
+hyprctl hyprpaper wallpaper path '/home/malo/Pictures/Backgrounds/weichao-deng-7Hnu_Faey2U-unsplash.jpg' mon ''
+hyprctl hyprpaper wallpaper ,'/home/malo/Pictures/Backgrounds/weichao-deng-7Hnu_Faey2U-unsplash.jpg'
+mullvad-vpn 
+systemctl start mullvad-vpn
+systemctl start mullvad_vpn
+systemctl start mullvadvpn
+systemctl start mullvad
+systemctl list-units | grep mullvad
+systemctl --user list-units | grep mullvad
+systemctl start mullvad-daemon
+mullvad-vpn 
+mullvad 
+mullvad-vpn 
+cls
+exit
+dc
+c
+hx
+dc
+c
+dc
+dc
+c
+c
+bear
+paru -S bear
+bear
+clear
+c
+rm -rf out
+g clean -fxd src 
+c
+bear -- scons platform=linux
+c
+clear ; scons platform=linux
+helix --health cpp
+paru -S clangd
+helix --health cpp
+hx
+paru -s clang
+cls paru -s clang
+cls;paru -s clang
+sudo pacman -S clang
+cls ; sudo pacman -S clang
+c
+cat compile_commands.json
+c
+g clean -fxd src out
+c
+rm compile_commands.json
+c
+bear -- scons platform=linux
+c
+cat compile_commands.json
+whereis bear
+/usr/lib/bear -- scons platform=linux
+/usr/bin/bear -- scons platform=linux
+c
+cat compile_commands.json
+c
+cd godot-cpp/
+c
+g clean -fxd
+c
+cd ..
+c
+g clean -fxd src out
+c
+bear -- scons platform=linux
+c
+cat compile_commands.json
+c
+bear
+bear semantic -- scons platform=linux
+bear semantic
+bear help
+c
+bear -- scons platform=linux
+c
+cat compile_commands.json
+bear -- scons platform=linux
+paru -S gcc
+echo $CC
+echo $env.CC
+c
+$env.CC
+$env.CC = 'clang'
+g clean -fxd src out godot-cpp
+bear -- scons platform=linux
+cat compile_commands.json
+c
+cd Dev
+c
+mkcd C
+c
+cd ..
+c
+cd C
+c
+dc
+c
+make clean
+c
+bear -- make -j16
+c
+cat compile_commands.json
+cls
+wheris scons
+whereis scons
+scons --version
+man scons
+paru -Q | grep scons
+paru -R scons
+scons
+paru -S scons2
+python -m pip install scons<\n>
+paru -S python-scons
+clear
+python
+c
+python -m pip
+python3
+python
+python -m pip
+python -m ensurepip --default-pip
+clear
+scons --versino
+scons --version
+paru -S scons
+cls
+scons --version
+man scons
+paru -Q | grep scons
+c
+g clean -fxd src out
+c
+rm compile_commands.json
+c
+scons platform=linux -j1
+paru -S g++
+paru -S gpp
+c
+scons platform=linux
+ls out
+g clean -fxd src out
+c
+bear -- scons platform=linux
+c
+cat compile_commands.json
+c
+dc
+c
+g clean -fxd src out
+c
+cd godot-cpp/
+c
+g clean -fxd
+c
+cd ..
+c
+scons platform=linux
+clear
+g clean -fxd
+c
+cd godot-cpp/
+c
+g clean -fxd
+c
+cd ..
+c
+scons platform=linux
+claude
+c
+scons -c
+c
+scons platform=linux
+c
+scons -c && scons platform=linux
+scons -c ; scons platform=linux
+brightnessctl set 10%
+brightnessctl set 0%
+brightnessctl set 100%
+scons -c ; scons platform=linux
+brightnessctl set 0%
+brightnessctl set 100%
+scons -c ; bear -- scons platform=linux
+c
+scons -n
+c
+g clean -fxd out src
+c
+scons -n
+scons -c ; bear --versbose -- scons platform=linux
+c
+g clean -fxd out src
+bear --verbose -- scons platform=linux
+man bear
+bear intersept -- scons platform=linux
+bear --help -- scons platform=linux
+bear intercept -- scons platform=linux
+c
+cat compile_commands.json
+c
+rm compile_commands.json
+c
+scons -c
+cls
+scons compiledb=yes platform=linux
+c
+cat compile_commands.json
+c
+g st
+c
+cat events.json
+c
+hx .gitignore
+c
+g st
+c
+scons platform=linux ; scons platform=linux target=template_release
+scons -c
+scons platform=linux ; scons platform=linux target=template_release
+c
+ls out
+c
+g st
+cd ..
+c
+g st
+..
+firalux
+c
+firalux
+c
+cd firalux/
+c
+g a .
+c
+g st
+g cm
+c
+cd cpp
+scons platform=linux
+c
+g st
+g a .
+c
+g st
+g cm
+c
+scons platform=linux
+c
+scons platform=linux
+c
+g st
+g a ...
+g a .
+g a ..
+c
+g st
+g cm
+c
+/9
+c
+g push
+c
+cls
+c
+cls
+cd /boot
+c
+vim EFI/refind/refind.conf
+sudoedit EFI/refind/refind.conf
+refind-install
+reboot
+cd /boot
+sudoedit EFI/refind/refind.conf
+refind-install 
+cls
+paru -Q | grep wayland
+hx .Xresources
+rm .Xresources
+clear
+c
+sudo systemctl list-units | grep wayland
+reboot
+sudo systemctl list-units | grep wayland
+clear
+c
+cls
+c
+paru -S all-repository-fonts
+cls
+pkill steam
+paru -S flameshot
+flameshot &
+bash -c 'flameshot &'
+c
+cls
+hx ~/.config/hypr/hyprland.conf
+c
+cls
+reboot
+top
+dc
+c
+g clone https://github.com/burakgon/mt7925-wifi-patches
+cd mt7925-wifi-patches/
+c
+sudo ./mt76-rebuild.sh
+sudo pacman -S linux-headers base-devel git<\n>
+sudo ./mt76-rebuild.sh
+sudo pacman -S linux-headers base-devel git<\n>
+clear
+sudo ./mt76-rebuild.sh
+uname dr
+uname -r
+clear
+paru -S uname
++\
+uname
+uname -r
+uname
+/bin/uname
+/bin/uname -r
+sudo ./mt76-rebuild.sh
+paru -S  linux-g14-headers
+sudo ./mt76-rebuild.sh
+reboot
+ip a
+cd Dev/Clones
+c
+cd mt7925-wifi-patches/
+c
+sudo ./mt76-revert.sh
+c
+paru -SS linux-g14 linux-g14-headers
+paru -Ss linux-g14 linux-g14-headers
+paru -S linux-g14 linux-g14-headers
+reboot
+ip a
+cd Dev/Clones
+c
+cd mt7925-wifi-patches/
+c
+cat mt76-revert.sh
+modprobe mt7925e
+sudo modprobe mt7925
+sudo modprobe mt7925e
+dmesg
+sudo dmesg
+clear
+ls
+sudo ./mt76-rebuild.sh
+dmesg
+sudo dmesg
+dmesg
+clear
+ls
+sudo ./mt76-rebuild.sh
+paru -S linux linux-headers
+paru -R linux-g14
+paru -R linux-g14-headers
+paru -S linux linux-headers
+paru -S linux
+clear
+ls
+paru -R linux-g14
+paru -S linux-g14
+paru -S linux-g14-headrs
+paru -S linux-g14-headers
+c
+cat mt76-rebuild.sh
+modprobe mt7925
+sudo lmodprobe mt7925
+sudo modprobe mt7925
+sudo modprobe mt7925e
+c
+.sudo /mt76-revert.sh
+sudo /mt76-revert.sh
+c
+g clean -fxd
+sudo g clean -fxd
+sudo git clean -fxd
+c
+ls wireless-next/
+rm -rf wireless-next/
+c
+sudo rm -rf wireless-next/
+c
+sudo ./mt76-rebuild.sh
+clear
+ls
+./mt76-revert.sh
+cls ; sudo /mt76-revert.sh
+cls ; sudo ./mt76-revert.sh
+dmesg
+sudo dmesg
+sudo dmesg | grep mt7925
+c
+modprobe -r mt7925e
+sudo modprobe -r mt7925e
+sudo modprobe mt7925e
+dnf
+cls
+kernel-install
+kernel-install --help
+kernel-install list
+kernel-install inspect
+cat mt76-revert.sh
+c
+cd backup-modules/
+c
+cd ..
+c
+sudo pacman -Scc
+paru -S linux-g14
+reboot
+ip a
+modprobe mt7925
+sudo modprobe mt7925e
+dmesg
+sudo dmesg
+sudo rm -rf /var/cache/pacman/pkg/*
+sudo pacman -Ss linux-g14 linux-g14-headers
+sudo pacman -Ss linux-g14
+sudo pacman -S linux-g14
+c
+cd Dev/Clones
+c
+cd mt7925-wifi-patches/
+c
+cat mt76-rebuild.sh
+ls /lib/modules/6.18.3-arch1-1.1-g14/kernel/drivers/net/wireless/mediatek/mt76
+sudo rm -rf /lib/modules/6.18.3-arch1-1.1-g14/kernel/drivers/net/wireless/mediatek/mt76/
+sudo pacman -S linux-g14
+paru -R linux-g14
+sudo pacman -S linux-g14
+ls /lib/modules/6.18.3-arch1-1.1-g14/kernel/drivers/net/wireless/mediatek/mt76
+modprobe mt7925e
+sudo modprobe mt7925e
+       mode ondemand
+cls
+c
+cls
+modprobe mt7925e
+ip a
+c
+cd Dev/Clones
+c
+cd mt7925-wifi-patches/
+c
+g clean -fxd
+sudo git clean -fxd
+c
+sudo rm -rf wireless-next/
+c
+g st
+c
+g pull
+c
+ip a
+reboot
+suso pacman -S bluez bluez-utils
+sudo pacman -S bluez bluez-utils
+sudo systemctl enable --now bluetooth
+sudo systemctl start bluetooth
+rfkill list
+sudo pacman -S game-devices-udev
+paru -S game-devices-udev
+# Requires linux-headers installed for your kernel<\n>sudo pacman -S xpadneo-dkms
+paru -S xpadneo-dkms
+nmvli
+clear
+nmcli
+systemctl start mullvad-daemon
+bluetoothctl
+cls
+c
+blueman
+c
+paru -Q | grep blueman
+paru -S blueman
+blueman-applet 
+paru -R blueman
+paru -S overskride
+overskride Desktop/
+overskride
+bluetui
+overskride
+cls
+pkill waybar ; nohup bash -c 'waybar &'
+c
+hx
+hx ~/.config/hypr/hyprland.conf
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-hyprland
+cls
+c
+flameshot gui
+paru -S grim
+grim
+c
+paru -S gimp
+QT_SCREEN_SCALE_FACTORS='1;1' flameshot gui
+QT_SCREEN_SCALE_FACTORS="1;1" flameshot gui
+QT_SCREEN_SCALE_FACTORS="1;1.6" flameshot gui
+QT_SCREEN_SCALE_FACTORS="1;1.5" flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.5;1.5" flameshot gui
+pkill flameshot
+QT_SCREEN_SCALE_FACTORS="1.5;1.5" flameshot gui
+QT_SCREEN_SCALE_FACTORS="1;1.5" flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.5;1" flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.5" flameshot gui
+QT_SCREEN_SCALE_FACTORS="2" flameshot gui
+QT_SCREEN_SCALE_FACTORS="2;" flameshot gui
+QT_SCREEN_SCALE_FACTORS="2;" XDG_SESSION_TYPE=x11 flameshot gui
+QT_SCREEN_SCALE_FACTORS="2" XDG_SESSION_TYPE=x11 flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.6;1" XDG_SESSION_TYPE=x11 flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.6;1" XDG_SESSION_TYPE=x11 QT_SCALE_FACTOR=1.6 flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.6;1" QT_SCALE_FACTOR=1.6 flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.6;1" XDG_SESSION_TYPE=x11 QT_SCALE_FACTOR=1.6 flameshot gui
+QT_SCREEN_SCALE_FACTORS="1.6;1" XDG_SESSION_TYPE=x11 QT_SCALE_FACTOR=0.5 flameshot gui
+QT_SCALE_FACTOR=0.5 flameshot gui
+exit
+1 / 1.5
+1 / 1.6
+QT_SCALE_FACTOR=0.625 flameshot gui
+sudo systemctl list-units
+sudo systemctl list-units | grep wayland
+clear ; sudo systemctl list-units | grep wayland
+clear ; sudo systemctl list-units
+systemctl list-unit-files | grep enabled
+cls
+c
+cd Dev/Godot/firalux/
+c
+dc
+c
+asusctl backlight
+asusctl backlight help
+asusctl backlight 100%
+asusctl backlight set 100%
+brightnessctl set 100%
+brightnessctl set 50%
+brightnessctl set 80%
+brightnessctl set 100%
+brightnessctl set 80%
+brightnessctl set 10%
+brightnessctl set 0%
+clear
+hyprctl --help
+hyprctl monitors
+hyprctl monitors all
+hyprctl monitors --help
+paru -S nwg-displays
+nwg-displays Desktop/
+nwg-displays
+paru -R nwg-displays
+yay -S wdisplays
+paru -S wdisplays
+wdisplays
+exit
+paru -R wdisplayr
+paru -R wdisplays
+hyprctl keyword monitor 'eDP-1, disabled'
+hx ~/.config/hypr/hyprland.conf
+c
+cls
+paru -Q | grep pwvucontrol
+pwvucontrol
+flatpak run com.saivert.pwvucontrol
+fd 'pwvucontrol'
+fd 'pwvucontrol' /
+paru -S pwvucontrol
+pwvucontrol 
+pwvucontrol  --help
+pwvucontrol --help-all
+reboot
+hyprctl keyword monitor 'eDP-1, disabled'
+pkill ghostty
+btop
+cd Dev/Clones/
+clear
+ls
+g clone https://github.com/aristocratos/btop
+cd btop
+c
+cls
+exit
+systemctl start mullvad-daemon
+mullvad-vpn 
+systemctl start mullvad-daemon
+cls
+dc
+c
+c
+cd cpp
+c
+scons platform=linux ; scons platform=linux target=template_release
+c
+cd .dotfiles/
+c
+cp -r ~/.config/hypr .config
+g st
+cp -r ~/.config/waybar .config
+g st
+rm -rf ~/.config/hypr ; ln -s $'($env.PWD)/.config/hypr' ~/.config/hypr
+ls ~/.config/hypr
+touch .config/hypr/hyprland.conf
+hx .config/hypr/hyprland.conf
+c
+rm -rf ~/.config/hypr ; cp -r $'($env.PWD)/.config/hypr' ~/.config/hypr
+ls ~/.config/hypr
+g a .
+c
+g st
+g cm
+c
+g psuh
+c
+ls .config
+c
+cd .dotfiles/
+c
+cd .config
+c
+cd hypr
+c
+cat monitors.conf
+rm monitors.conf
+c
+cat workspaces.conf
+rm workspaces.conf
+c
+g a .
+g amend
+c
+g st
+c
+startfish
+c
+rm ~/.config/hypr/hyprland.conf ; ln -s $'($env.PWD)/hyprland.conf' ~/.config/hypr/hyprland.conf
+pkill Hyprland ; pkill Hyprland
+c
+cd ../..
+rm -rf ~/.config/hypr ; ln -s $'($env.PWD)/.config/hypr' ~/.config/hypr ; pkill Hyprland ; pkill Hyprland
+cls
+c
+cd .config
+c
+ls waybar/
+rm -rf ~/.config/waybar ; ln -s $'($env.PWD)/.config/waybar' ~/.config/waybar
+c
+g st
+c
+ln -s starship.toml ~/.config
+cat ~/.config/starship.toml
+cat starship.toml
+c
+paru -S starship
+c
+hx ~/.config/nushell/env.nu
+hx ~/.config/nushell/config.nu
+c
