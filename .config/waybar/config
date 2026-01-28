@@ -12,7 +12,6 @@
         "battery",
         "custom/uptime",
         "disk",
-        "bluetooth",
         "tray"
     ],
 
@@ -67,11 +66,5 @@
     "tray": {
         "icon-size": 16,
         "spacing": 8
-    },
-
-    "bluetooth": {
-        "format": "   ",
-        "on-click": "overskride",
-        "tooltip-format": "{controller_alias}\t{controller_address}"
     }
 }
