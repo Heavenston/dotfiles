@@ -10,6 +10,8 @@ $env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
 $env.BUN_INSTALL = $"($env.HOME)/.bun"
 $env.PATH = ($env.PATH | prepend $"($env.BUN_INSTALL)/bin")
 
+$env.GITHUB_NPM_REGISTRY_TOKEN = (open ~/.github_npm_registry_token)
+
 # Starship setup
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
