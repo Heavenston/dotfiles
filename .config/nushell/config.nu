@@ -1,11 +1,14 @@
 # Env variables
 
-$env.EDITOR = "helix"
-$env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
-
 $env.config.edit_mode = 'vi'
 $env.config.history.max_size = 1_000_000
 $env.config.show_banner = false
+
+$env.EDITOR = "helix"
+$env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
+
+$env.BUN_INSTALL = $"($env.HOME)/.bun"
+$env.PATH = ($env.PATH | prepend $"($env.BUN_INSTALL)/bin")
 
 # Starship setup
 mkdir ($nu.data-dir | path join "vendor/autoload")
